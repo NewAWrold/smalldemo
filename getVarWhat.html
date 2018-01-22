@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+function initGridster(options){
+	var defaults = {  
+		element: '', //id 或者 类名
+		url: '', //数据地址   
+	    widgetMarginL: 5,
+	    widgetMarginR: 5,
+	    minWidgetWidth: 160,
+	    minWidgetHeight: 120,
+	    total: 24,   //页面中最多展示的单元格
+	    extraNum: 0, //统计图表个数 
+	    analysisDim: ['ORG'] //分析维度
+	};  	
+
+		var _initGridster = {
+			_cachePositionData : {},
+			_gridsterDataObj:{},
+			_initWidGetArry:[],
+			_charObj:{},
+			init: function(options){
+				var me = _initGridster;
+				console.log(me);
+				for (var v in options) {
+					if (v) {
+						me[v] = options[v];
+					};
+				};
+			}
+		}
+		_initGridster.init();
+	</script>
+</body>
+</html>
